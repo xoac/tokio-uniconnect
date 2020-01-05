@@ -1,0 +1,19 @@
+[package]
+name = "tokio-uniconnect"
+version = "0.1.0"
+authors = ["Sylwester Rąpała <sylwester.rapala@outlook.com>"]
+edition = "2018"
+description = "Universal connection wrapper"
+license = "MIT"
+categories = ["asynchronous", "network-programming"]
+keywords = ["io", "net", "serial"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+derive_more = "0.99"
+tokio = "0.1"
+tokio-serial = "3.0"
+mio = "0.6"
+log = "0.4"
+futures = "0.1"
