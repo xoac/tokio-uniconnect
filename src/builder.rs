@@ -1,9 +1,9 @@
-use crate::retrying_tcp_stream::{RetryingTcpStream, TcpStreamSettings};
+use crate::retrying_tcp_stream::RetryingTcpStream;
 use crate::UniConnect;
-use tokio_serial::{Serial, SerialPortSettings};
+use tokio_serial::Serial;
 
 pub use create::retrying_tcp_stream::TcpStreamSettings;
-pub use tokio_serial::SerialPortSettings;
+pub use tokio_serial::{DataBits, FlowControl, Parity, SerialPortSettings, StopBits};
 
 /// Helps create UniConnect with correct settings doesn't matter TCP or Serial port.
 /// This `RetryingTcpOrSerial` will use RetryingTcpStream (this will reconnect internally on error) instead of
